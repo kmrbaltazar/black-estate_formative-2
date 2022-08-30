@@ -1,0 +1,214 @@
+@import "./global";
+
+// Tablets
+@media (max-width: 62em) {
+  .navigation {
+    justify-content: flex-start;
+
+    ul {
+      display: none;
+    }
+
+    .navigation__logo {
+      width: 100vw;
+      display: flex;
+      justify-content: space-between;
+      margin: 10px 10px;
+      max-width: 100vw;
+    }
+
+    .navigation__logo-wrapper {
+      max-width: 140px;
+    }
+
+    .navigation__menu {
+      display: flex;
+      position: relative;
+      align-content: center;
+    }
+
+    .navigation__menu:hover > .mobile-menu-content {
+      display: block;
+    }
+
+    .mobile-menu-content {
+      position: absolute;
+      background-color: $main_color;
+    }
+  }
+
+  .home__landing {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+      url("../images/homepage/landing.png");
+    background-position: bottom;
+  }
+
+  .home__landing {
+    h3,
+    .circle_winemaker {
+      display: none;
+    }
+
+    .award-mobile {
+      display: block;
+      position: absolute;
+      bottom: 120px;
+      background-color: $sub_color;
+      padding: 7px;
+    }
+
+    h1 {
+      font-size: 36px;
+      background-color: rgba(0, 0, 0, 0.45);
+    }
+  }
+
+  .card-row-wrapper {
+   
+    margin: 0;
+      gap: 50px;
+  }
+
+  .pic-text-section {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
+  }
+
+  .footer {
+      max-width: 50em;
+  }
+
+  .shop-menu {
+
+    p {
+        width: 80%;
+    }
+  }
+
+  
+}
+
+// Mobile phone
+@media (max-width: 30em) {
+  .navigation {
+    justify-content: flex-start;
+    max-width: 30em;
+
+    ul {
+      display: none;
+    }
+
+    .navigation__logo {
+      width: 100vw;
+      display: flex;
+      justify-content: space-between;
+      margin: 0 10px;
+      max-width: 100vw;
+    }
+
+    .navigation__logo-wrapper {
+      max-width: 110px;
+    }
+
+    .navigation__menu {
+      display: flex;
+      position: relative;
+    }
+  }
+
+  #burger-menu {
+      width: 100%;
+      min-width: 200px;
+  }
+
+  .home__landing {
+    h3,
+    .circle_winemaker {
+      display: none;
+    }
+
+    .award-mobile {
+      display: block;
+      position: absolute;
+      bottom: 190px;
+      background-color: $sub_color;
+      padding: 7px;
+    }
+
+    h1 {
+      font-size: 36px;
+      background-color: rgba(0, 0, 0, 0.45);
+    }
+  }
+
+  .home__vineyard-container,
+  .home__item-card {
+    min-width: 250px;
+    max-width: 300px;
+  }
+
+  .pic-text-section {
+    gap: 25px;
+    margin: 0 auto;
+    padding: 15px 0 0 0;
+
+    .pic-text-txt-wrapper {
+      max-width: 250px;
+      min-width: 220px;
+      margin: 0 auto;
+      min-height: 200px;
+    }
+
+    .pic-text-img-wrapper {
+      min-width: 250px;
+      padding: 20px;
+    }
+  }
+
+  .shop-menu {
+
+    nav {
+        flex-direction: column;
+        gap: 0;
+    }
+  }
+
+  .wine-types {
+    width: 85vw;
+  }
+
+  .shop-wine-container {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    place-content: center;
+  }
+}
+
+// Galaxy fold
+@media (max-width: 18em) {
+
+    .home__landing {
+        background-position: 65% bottom;
+      }
+  .home__text h1 {
+      font-size: 1.75em;
+      padding: 10px;
+  }
+
+    .award-mobile {
+    bottom: 360px !important;
+    right: 2%;
+    left: 2%;
+  }
+
+  .newsletter-form {
+    transform: scale(0.8);
+  }
+
+  .footer-newsletter {
+    p {
+        width: 85vw;
+        text-align: justify;
+    }
+  }
+}
