@@ -32,9 +32,7 @@
       rel="manifest"
       href="./assets/icons/favicon_black-estate/site.webmanifest"
     />
-    <title>
-      Wine and Shop
-    </title>
+    <title>Wine and Shop</title>
     <link rel="stylesheet" href="./assets/styles/main.css" />
     <script src="./assets/JS/scripts.js" defer></script>
   </head>
@@ -122,7 +120,7 @@
     </section>
     <section class="shop-menu">
       <nav class="shop-categories">
-        <h2><a href="#">wine</a></h2>
+        <h2><a href="./shop.html#wine-id">wine</a></h2>
         <h2><a href="#">voucher</a></h2>
         <h2><a href="#">food</a></h2>
         <h2><a href="#">items</a></h2>
@@ -148,163 +146,344 @@
         </p>
       </div>
     </section>
-    <section class="shop-title">
-        <div class="our-wines">
-            <h1>our wines</h1>
+    <section class="shop-title" id="wine-id">
+      <div class="our-wines">
+        <h1>our wines</h1>
+      </div>
+      <div class="wine-types">
+        <div class="wine-icon">
+          <img src="./assets/icons/red wine icon.svg" alt="Red wine glass" />
         </div>
-        <div class="wine-types">
-            <div class="wine-icon"><img src="./assets/icons/red wine icon.svg" alt="Red wine glass"></div>
-            <div class="wine-icon"><img src="./assets/icons/white wine icon.svg" alt="White wine glass"></div>
-            <div class="wine-icon"><img src="./assets/icons/pink wine icon.svg" alt="Rose wine glass"></div>
-            <div class="wine-icon"><img src="./assets/icons/sparkling.svg" alt="Sparkling wine glass"></div>
+        <div class="wine-icon">
+          <img
+            src="./assets/icons/white wine icon.svg"
+            alt="White wine glass"
+          />
         </div>
+        <div class="wine-icon">
+          <img src="./assets/icons/pink wine icon.svg" alt="Rose wine glass" />
+        </div>
+        <div class="wine-icon">
+          <img src="./assets/icons/sparkling.svg" alt="Sparkling wine glass" />
+        </div>
+      </div>
     </section>
     <section class="shop-wine-container">
-        <!-- Damsteep Pet Nat 2022 -->
-        <div class="wine-cards">
-            <div class="shop-wines">
-                <img src="./assets/images/shop/Damsteep_patnat2022-removebg-preview.png" alt="Image of Damsteep Pet Nat 2022" class="wine-pics">
-                <img src="./assets/icons/sparkling.svg" alt="Sparkling wine glass" class="shop-wine-icon">
-            </div>
-            <h2>damsteep pét nat 2022</h2>
-            <h3>$45</h3>
-            <p>Pink, round and effervescent. Spring, be here now. Fresh, cloud like effervescence, pure, delicate summer fruits.</p>
-            <a href="./damsteep-petnat-2022.html">explore this wine</a>
-            <div class="buy-container">
-                <label for="qty" class="qty">Qty:</label>
-                <input type="number" id="qty" name="quantity" min="1" placeholder="#">
-                <button>add to cart</button>
-            </div>
+      <!-- Damsteep Pet Nat 2022 -->
+      <div class="wine-cards">
+        <div class="shop-wines">
+          <img
+            src="./assets/images/shop/Damsteep_patnat2022-removebg-preview.png"
+            alt="Image of Damsteep Pet Nat 2022"
+            class="wine-pics"
+          />
+          <img
+            src="./assets/icons/sparkling.svg"
+            alt="Sparkling wine glass"
+            class="shop-wine-icon"
+          />
         </div>
-        <!-- Treble Rose 2022 -->
-        <div class="wine-cards">
-            <div class="shop-wines">
-                <img src="./assets/images/shop/treble-rose2022.png" alt="Image of Treble Rosé 2022" class="wine-pics">
-                <img src="./assets/icons/pink wine icon.svg" alt="Pink wine glass" class="shop-wine-icon">
-            </div>
-            <h2>treble rosé 2022</h2>
-            <h3>$38</h3>
-            <p>Deep red hue. Vibrant and bright aroma of strawberry, cranberry, rose hip, cardamom and petrichor.  Bright on the pallet, mineral and long with tamarillo, wild berry, and liquorice flavours.</p>
-            <a href="#">explore this wine</a>
-            <div class="buy-container">
-                <label for="qty" class="qty">Qty:</label>
-                <input type="number" id="qty" name="quantity" min="1" placeholder="#">
-                <button>add to cart</button>
-            </div>
+        <h2>damsteep pét nat 2022</h2>
+        <h3>$45</h3>
+        <p>
+          Pink, round and effervescent. Spring, be here now. Fresh, cloud like
+          effervescence, pure, delicate summer fruits.
+        </p>
+        <a href="./damsteep-petnat-2022.html">explore this wine</a>
+        <div class="buy-container">
+          <label for="qty" class="qty">Qty:</label>
+          <input
+            type="number"
+            id="qty"
+            name="quantity"
+            min="1"
+            placeholder="#"
+          />
+          <button>add to cart</button>
         </div>
-        <!-- Home Chardonnay 2020 -->
-        <div class="wine-cards">
-            <div class="shop-wines">
-                <img src="./assets/images/shop/Home_Chardonnay_2020-removebg-preview.png" alt="Image of Home Chardonnay 2020" class="wine-pics">
-                <img src="./assets/icons/white wine icon.svg" alt="White wine glass" class="shop-wine-icon">
-            </div>
-            <h2>home chardonnay 2020</h2>
-            <h3>$65</h3>
-            <p>Aromas of grapefruit, hazelnut, orange blossom nectarine and sea spray. Rich, pure and integrated with a dense core of concentrated fruit. The flavours taper to a salty, mineral and long finish.</p>
-            <a href="#">explore this wine</a>
-            <div class="buy-container">
-                <label for="qty" class="qty">Qty:</label>
-                <input type="number" id="qty" name="quantity" min="1" placeholder="#">
-                <button>add to cart</button>
-            </div>
+      </div>
+      <!-- Treble Rose 2022 -->
+      <div class="wine-cards">
+        <div class="shop-wines">
+          <img
+            src="./assets/images/shop/treble-rose2022.png"
+            alt="Image of Treble Rosé 2022"
+            class="wine-pics"
+          />
+          <img
+            src="./assets/icons/pink wine icon.svg"
+            alt="Pink wine glass"
+            class="shop-wine-icon"
+          />
         </div>
-        <!-- Netherwood Chardonnay 2018 -->
-        <div class="wine-cards">
-            <div class="shop-wines">
-                <img src="./assets/images/shop/Netherwood_Chardonnay_2017-removebg-preview.png" alt="Image of Netherwood Chardonnay 2018" class="wine-pics">
-                <img src="./assets/icons/white wine icon.svg" alt="White wine glass" class="shop-wine-icon long-title-icon">
-            </div>
-            <h2>netherwood chardonnay 2018</h2>
-            <h3>$95</h3>
-            <p>Smells like orange blossom, nectarine and hazelnut. A dense mid-pallet with fresh invigorating minerality from sandstone. Rich but salivating and persistent with considerable length of flavour.</p>
-            <a href="#">explore this wine</a>
-            <div class="buy-container">
-                <label for="qty" class="qty">Qty:</label>
-                <input type="number" id="qty" name="quantity" min="1" placeholder="#">
-                <button>add to cart</button>
-            </div>
+        <h2>treble rosé 2022</h2>
+        <h3>$38</h3>
+        <p>
+          Deep red hue. Vibrant and bright aroma of strawberry, cranberry, rose
+          hip, cardamom and petrichor. Bright on the pallet, mineral and long
+          with tamarillo, wild berry, and liquorice flavours.
+        </p>
+        <a href="./damsteep-petnat-2022.html">explore this wine</a>
+        <div class="buy-container">
+          <label for="qty" class="qty">Qty:</label>
+          <input
+            type="number"
+            id="qty"
+            name="quantity"
+            min="1"
+            placeholder="#"
+          />
+          <button>add to cart</button>
         </div>
-        <!-- Home Pinot Noir 2020 -->
-        <div class="wine-cards">
-            <div class="shop-wines">
-                <img src="./assets/images/shop/Home_Pinot_Noir_2020-removebg-preview.png" alt="Image of Home Pinot Noir 2020" class="wine-pics">
-                <img src="./assets/icons/red wine icon.svg" alt="Red wine glass" class="shop-wine-icon">
-            </div>
-            <h2>home pinot noir 2020</h2>
-            <h3>$45</h3>
-            <p>Deep ruby hue. Smells like dark plum, violets, black olive, woody herbs, cinnamon, and earth. The palate is dense, typical of Pinot Noirs from the Home vineyard clays, with emerging silky fruit flavours and a persistent mineral finish.</p>
-            <a href="#">explore this wine</a>
-            <div class="buy-container">
-                <label for="qty" class="qty">Qty:</label>
-                <input type="number" id="qty" name="quantity" min="1" placeholder="#">
-                <button>add to cart</button>
-            </div>
+      </div>
+      <!-- Home Chardonnay 2020 -->
+      <div class="wine-cards">
+        <div class="shop-wines">
+          <img
+            src="./assets/images/shop/Home_Chardonnay_2020-removebg-preview.png"
+            alt="Image of Home Chardonnay 2020"
+            class="wine-pics"
+          />
+          <img
+            src="./assets/icons/white wine icon.svg"
+            alt="White wine glass"
+            class="shop-wine-icon"
+          />
         </div>
-        <!-- Damsteep Pinot Noir 2020 -->
-        <div class="wine-cards">
-            <div class="shop-wines">
-                <img src="./assets/images/shop/Damsteep_Pinot_Noir_2020.png" alt="Image of Damsteep Pinot Noir 2020" class="wine-pics">
-                <img src="./assets/icons/red wine icon.svg" alt="Red wine glass" class="shop-wine-icon">
-            </div>
-            <h2>damsteep pinot noir 2020</h2>
-            <h3>$55</h3>
-            <p>Deep Ruby hue. Fragrant aromas of wild raspberry, dark plum, sandalwood, vanilla and sea spray. Flavours of silken and bright wild forest fruits and graphite. </p>
-            <a href="#">explore this wine</a>
-            <div class="buy-container">
-                <label for="qty" class="qty">Qty:</label>
-                <input type="number" id="qty" name="quantity" min="1" placeholder="#">
-                <button>add to cart</button>
-            </div>
+        <h2>home chardonnay 2020</h2>
+        <h3>$65</h3>
+        <p>
+          Aromas of grapefruit, hazelnut, orange blossom nectarine and sea
+          spray. Rich, pure and integrated with a dense core of concentrated
+          fruit. The flavours taper to a salty, mineral and long finish.
+        </p>
+        <a href="./damsteep-petnat-2022.html">explore this wine</a>
+        <div class="buy-container">
+          <label for="qty" class="qty">Qty:</label>
+          <input
+            type="number"
+            id="qty"
+            name="quantity"
+            min="1"
+            placeholder="#"
+          />
+          <button>add to cart</button>
         </div>
-        <!-- Netherwood Pinot Noir 2019 -->
-        <div class="wine-cards">
-            <div class="shop-wines">
-                <img src="./assets/images/shop/Netherwood-Pinot-Noir-2019-removebg-preview.png" alt="Image of Netherwood Pinot Noir 2019" class="wine-pics">
-                <img src="./assets/icons/red wine icon.svg" alt="Red wine glass" class="shop-wine-icon">
-            </div>
-            <h2>netherwood pinot noir 2019</h2>
-            <h3>$75</h3>
-            <p>“This is an ethereally perfumed, floral style with strawberries and wild cherries, swathed in spice and whole-bunch notes. The palate has wispy tannins that arc around fresh strawberry and cherry flavors. From organically grown grapes. Drink or hold.”.  - Nick Stock (jamesuckling.com.)</p>
-            <a href="#">explore this wine</a>
-            <div class="buy-container">
-                <label for="qty" class="qty">Qty:</label>
-                <input type="number" id="qty" name="quantity" min="1" placeholder="#">
-                <button>add to cart</button>
-            </div>
+      </div>
+      <!-- Netherwood Chardonnay 2018 -->
+      <div class="wine-cards">
+        <div class="shop-wines">
+          <img
+            src="./assets/images/shop/Netherwood_Chardonnay_2017-removebg-preview.png"
+            alt="Image of Netherwood Chardonnay 2018"
+            class="wine-pics"
+          />
+          <img
+            src="./assets/icons/white wine icon.svg"
+            alt="White wine glass"
+            class="shop-wine-icon long-title-icon"
+          />
         </div>
-        <!-- Wild Life Triangle 2021 -->
-        <div class="wine-cards">
-            <div class="shop-wines">
-                <img src="./assets/images/shop/Wild-Life-Triangle-2020-removebg-preview.png" alt="Image of Wild Life Triangle Block 2021" class="wine-pics">
-                <img src="./assets/icons/red wine icon.svg" alt="Red wine glass" class="shop-wine-icon">
-            </div>
-            <h2>wild life triangle block 2021</h2>
-            <h3>$40</h3>
-            <p>Aromas of bright red cherry, strawberry and hints of horehound. The palate has a fine grained vibrant texture, with vivid fruits, and a mineral lingering finish.</p>
-            <a href="#">explore this wine</a>
-            <div class="buy-container">
-                <label for="qty" class="qty">Qty:</label>
-                <input type="number" id="qty" name="quantity" min="1" placeholder="#">
-                <button>add to cart</button>
-            </div>
+        <h2>netherwood chardonnay 2018</h2>
+        <h3>$95</h3>
+        <p>
+          Smells like orange blossom, nectarine and hazelnut. A dense mid-pallet
+          with fresh invigorating minerality from sandstone. Rich but salivating
+          and persistent with considerable length of flavour.
+        </p>
+        <a href="./damsteep-petnat-2022.html">explore this wine</a>
+        <div class="buy-container">
+          <label for="qty" class="qty">Qty:</label>
+          <input
+            type="number"
+            id="qty"
+            name="quantity"
+            min="1"
+            placeholder="#"
+          />
+          <button>add to cart</button>
         </div>
-        <!-- Home Cabernet Franc 2020 -->
-        <div class="wine-cards">
-            <div class="shop-wines">
-                <img src="./assets/images/shop/Home_Cabernet_Franc_2020-removebg-preview.png" alt="Image of Home Cabernet Franc 2020" class="wine-pics">
-                <img src="./assets/icons/red wine icon.svg" alt="Red wine glass" class="shop-wine-icon">
-            </div>
-            <h2>home cabernet franc 2020</h2>
-            <h3>$55</h3>
-            <p>Generous aromas of raspberries, blackcurrants, violets and graphite. Underlying smells of earth with autumnal vine leaves and prunings. Fragrant and supple with succulent weight and texture.</p>
-            <a href="#">explore this wine</a>
-            <div class="buy-container">
-                <label for="qty" class="qty">Qty:</label>
-                <input type="number" id="qty" name="quantity" min="1" placeholder="#">
-                <button>add to cart</button>
-            </div>
+      </div>
+      <!-- Home Pinot Noir 2020 -->
+      <div class="wine-cards">
+        <div class="shop-wines">
+          <img
+            src="./assets/images/shop/Home_Pinot_Noir_2020-removebg-preview.png"
+            alt="Image of Home Pinot Noir 2020"
+            class="wine-pics"
+          />
+          <img
+            src="./assets/icons/red wine icon.svg"
+            alt="Red wine glass"
+            class="shop-wine-icon"
+          />
         </div>
+        <h2>home pinot noir 2020</h2>
+        <h3>$45</h3>
+        <p>
+          Deep ruby hue. Smells like dark plum, violets, black olive, woody
+          herbs, cinnamon, and earth. The palate is dense, typical of Pinot
+          Noirs from the Home vineyard clays, with emerging silky fruit flavours
+          and a persistent mineral finish.
+        </p>
+        <a href="./damsteep-petnat-2022.html">explore this wine</a>
+        <div class="buy-container">
+          <label for="qty" class="qty">Qty:</label>
+          <input
+            type="number"
+            id="qty"
+            name="quantity"
+            min="1"
+            placeholder="#"
+          />
+          <button>add to cart</button>
+        </div>
+      </div>
+      <!-- Damsteep Pinot Noir 2020 -->
+      <div class="wine-cards">
+        <div class="shop-wines">
+          <img
+            src="./assets/images/shop/Damsteep_Pinot_Noir_2020.png"
+            alt="Image of Damsteep Pinot Noir 2020"
+            class="wine-pics"
+          />
+          <img
+            src="./assets/icons/red wine icon.svg"
+            alt="Red wine glass"
+            class="shop-wine-icon"
+          />
+        </div>
+        <h2>damsteep pinot noir 2020</h2>
+        <h3>$55</h3>
+        <p>
+          Deep Ruby hue. Fragrant aromas of wild raspberry, dark plum,
+          sandalwood, vanilla and sea spray. Flavours of silken and bright wild
+          forest fruits and graphite.
+        </p>
+        <a href="./damsteep-petnat-2022.html">explore this wine</a>
+        <div class="buy-container">
+          <label for="qty" class="qty">Qty:</label>
+          <input
+            type="number"
+            id="qty"
+            name="quantity"
+            min="1"
+            placeholder="#"
+          />
+          <button>add to cart</button>
+        </div>
+      </div>
+      <!-- Netherwood Pinot Noir 2019 -->
+      <div class="wine-cards">
+        <div class="shop-wines">
+          <img
+            src="./assets/images/shop/Netherwood-Pinot-Noir-2019-removebg-preview.png"
+            alt="Image of Netherwood Pinot Noir 2019"
+            class="wine-pics"
+          />
+          <img
+            src="./assets/icons/red wine icon.svg"
+            alt="Red wine glass"
+            class="shop-wine-icon"
+          />
+        </div>
+        <h2>netherwood pinot noir 2019</h2>
+        <h3>$75</h3>
+        <p>
+          “This is an ethereally perfumed, floral style with strawberries and
+          wild cherries, swathed in spice and whole-bunch notes. The palate has
+          wispy tannins that arc around fresh strawberry and cherry flavors.
+          From organically grown grapes. Drink or hold.”. - Nick Stock
+          (jamesuckling.com.)
+        </p>
+        <a href="./damsteep-petnat-2022.html">explore this wine</a>
+        <div class="buy-container">
+          <label for="qty" class="qty">Qty:</label>
+          <input
+            type="number"
+            id="qty"
+            name="quantity"
+            min="1"
+            placeholder="#"
+          />
+          <button>add to cart</button>
+        </div>
+      </div>
+      <!-- Wild Life Triangle 2021 -->
+      <div class="wine-cards">
+        <div class="shop-wines">
+          <img
+            src="./assets/images/shop/Wild-Life-Triangle-2020-removebg-preview.png"
+            alt="Image of Wild Life Triangle Block 2021"
+            class="wine-pics"
+          />
+          <img
+            src="./assets/icons/red wine icon.svg"
+            alt="Red wine glass"
+            class="shop-wine-icon"
+          />
+        </div>
+        <h2>wild life triangle block 2021</h2>
+        <h3>$40</h3>
+        <p>
+          Aromas of bright red cherry, strawberry and hints of horehound. The
+          palate has a fine grained vibrant texture, with vivid fruits, and a
+          mineral lingering finish.
+        </p>
+        <a href="./damsteep-petnat-2022.html">explore this wine</a>
+        <div class="buy-container">
+          <label for="qty" class="qty">Qty:</label>
+          <input
+            type="number"
+            id="qty"
+            name="quantity"
+            min="1"
+            placeholder="#"
+          />
+          <button>add to cart</button>
+        </div>
+      </div>
+      <!-- Home Cabernet Franc 2020 -->
+      <div class="wine-cards">
+        <div class="shop-wines">
+          <img
+            src="./assets/images/shop/Home_Cabernet_Franc_2020-removebg-preview.png"
+            alt="Image of Home Cabernet Franc 2020"
+            class="wine-pics"
+          />
+          <img
+            src="./assets/icons/red wine icon.svg"
+            alt="Red wine glass"
+            class="shop-wine-icon"
+          />
+        </div>
+        <h2>home cabernet franc 2020</h2>
+        <h3>$55</h3>
+        <p>
+          Generous aromas of raspberries, blackcurrants, violets and graphite.
+          Underlying smells of earth with autumnal vine leaves and prunings.
+          Fragrant and supple with succulent weight and texture.
+        </p>
+        <a href="./damsteep-petnat-2022.html">explore this wine</a>
+        <div class="buy-container">
+          <label for="qty" class="qty">Qty:</label>
+          <input
+            type="number"
+            id="qty"
+            name="quantity"
+            min="1"
+            placeholder="#"
+          />
+          <button>add to cart</button>
+        </div>
+      </div>
     </section>
+    <section class="shop-title" id="voucher-id">
+      <div class="vouchers">
+        <h1>vouchers</h1>
+      </div>
+    </section>
+
     <footer class="footer">
       <div class="footer-child footer-hours">
         <h3>store hours</h3>
@@ -390,7 +569,8 @@
               /></a>
             </div>
             <div class="footer-icons">
-              <a href="https://www.tripadvisor.co.nz/Restaurant_Review-g658487-d3794935-Reviews-Black_Estate_Wine-Waipara_Canterbury_Region_South_Island.html"
+              <a
+                href="https://www.tripadvisor.co.nz/Restaurant_Review-g658487-d3794935-Reviews-Black_Estate_Wine-Waipara_Canterbury_Region_South_Island.html"
                 ><img
                   src="./assets/icons/tripadvisor.svg"
                   alt="TripAdvisor icon"
