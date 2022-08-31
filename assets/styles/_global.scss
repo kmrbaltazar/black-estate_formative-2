@@ -94,10 +94,19 @@ p {
 
 button {
   @include main-button;
+
+  a {
+    color: #fff;
+    text-decoration: none;
+  }
 }
 
 button:hover {
   @include main-button_hover;
+}
+
+button:hover > a {
+  color: $contrast_color;
 }
 
 /* HEADER */

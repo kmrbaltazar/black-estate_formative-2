@@ -383,7 +383,6 @@
   }
 
   .explore-wine-txt-wrapper {
-
     .wine-label-wrapper {
       color: #fff;
       text-transform: uppercase;
@@ -437,6 +436,142 @@
     img {
       width: 2em;
       height: 2em;
+    }
+  }
+}
+
+.voucher {
+  p {
+    width: 60vw;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+  }
+}
+
+.shop-others {
+  width: 100%;
+  height: 100%;
+  min-width: 250px;
+  max-width: 350px;
+  min-height: 250px;
+  max-height: 350px;
+  place-items: center;
+  margin: 0 auto;
+
+  img {
+    @include basic-image;
+    object-position: center;
+  }
+}
+
+.vineyard-section {
+  position: relative;
+  text-align: center;
+
+  .page-title-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    button {
+      margin: 0 15px;
+    }
+  }
+}
+
+.vineyard-info-container {
+  display: grid;
+  grid-template-columns: repeat(2,600px);
+  grid-auto-rows: minmax(700px, auto);
+  margin: 0 auto;
+  background-color: $sub_color;
+  place-content: center;
+  gap: 100px;
+  color: $main_color;
+  padding: 50px 0;
+
+  h2 {
+    font-family: $font_heading;
+  }
+
+
+  .vineyard-info-img {
+    width: 100%;
+    height: 100%;
+    min-width: 200px;
+    max-width: 600px;
+    min-height: 400px;
+    max-height: 600px;
+
+    img {
+      @include basic-image;
+    }
+  }
+
+  .vineyard-info-text {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    .view-soil {
+      text-align: right;
+      text-transform: capitalize;
+    }
+
+    a {
+      @include link-only;
+    }
+
+    a:hover {
+      @include link-only_hover;
+    }
+
+  }
+
+  .vineyard-album {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    h2 {
+      text-transform: capitalize;
+      text-align: center;
+    }
+
+    button {
+      align-self: flex-end;
+    }
+
+    .vineyard-album-images {
+      display: flex;
+      justify-content: space-evenly;
+      gap: 20px;
+
+      .vineyard-wine-card {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+
+        p {
+          text-transform: capitalize;
+          padding-top: 10px;
+        }
+
+        .vineyard-wine-container {
+          height: 100%;
+          max-height: 230px;
+          width: 150px;
+          background-color: #fff;
+
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+          }
+        }
+      }
     }
   }
 }
