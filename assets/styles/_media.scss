@@ -64,9 +64,8 @@
   }
 
   .card-row-wrapper {
-   
     margin: 0;
-      gap: 50px;
+    gap: 50px;
   }
 
   .pic-text-section {
@@ -76,13 +75,12 @@
   }
 
   .footer {
-      max-width: 50em;
+    max-width: 50em;
   }
 
   .shop-menu {
-
     p {
-        width: 80%;
+      width: 80%;
     }
   }
 
@@ -92,13 +90,51 @@
   }
 
   .wine-details-container {
-
     .info-div {
-        width: 80vw;
+      width: 80vw;
     }
   }
 
-  
+  .vineyard-links {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .vineyard-info-container {
+    flex-direction: column-reverse;
+    padding: 50px;
+
+    .vineyard-album button {
+      align-self: center !important;
+    }
+  }
+
+  #damsteep {
+      flex-direction: column-reverse;
+  }
+
+  .vineyard-info-img img {
+    min-height: 15vh;
+    max-height: 20vh;
+    object-position: 60% 65% !important;
+  }
+
+  .soils-container {
+    flex-direction: column;
+    width: 75vw;
+
+    .soil-image-wrapper {
+        min-height: 150px;
+        min-width: 250px;
+    }
+  }
+
+  .visit-album-container {
+      flex-direction: column;
+  }
+
+ 
 }
 
 // Mobile phone
@@ -130,8 +166,8 @@
   }
 
   #burger-menu {
-      width: 100%;
-      min-width: 200px;
+    width: 100%;
+    min-width: 200px;
   }
 
   .home__landing {
@@ -179,10 +215,9 @@
   }
 
   .shop-menu {
-
     nav {
-        flex-direction: column;
-        gap: 0;
+      flex-direction: column;
+      gap: 0;
     }
   }
 
@@ -194,20 +229,29 @@
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     place-content: center;
   }
+
+  .vineyard-album-images {
+    flex-direction: column;
+    align-content: center;
+    margin: 0 auto;
+
+    .vineyard-wine-container img {
+      max-height: 200px !important;
+    }
+  }
 }
 
 // Galaxy fold
 @media (max-width: 18em) {
-
-    .home__landing {
-        background-position: 65% bottom;
-      }
+  .home__landing {
+    background-position: 65% bottom;
+  }
   .home__text h1 {
-      font-size: 1.75em;
-      padding: 10px;
+    font-size: 1.75em;
+    padding: 10px;
   }
 
-    .award-mobile {
+  .award-mobile {
     bottom: 360px !important;
     right: 2%;
     left: 2%;
@@ -219,8 +263,8 @@
 
   .footer-newsletter {
     p {
-        width: 85vw;
-        text-align: justify;
+      width: 85vw;
+      text-align: justify;
     }
   }
 }

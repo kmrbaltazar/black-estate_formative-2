@@ -125,6 +125,7 @@
   gap: 20px;
   margin: 40px auto;
   place-items: center;
+  width: 80vw;
 
   .pic-text-img-wrapper {
     max-height: 400px;
@@ -481,16 +482,51 @@
   }
 }
 
-.vineyard-info-container {
-  display: grid;
-  grid-template-columns: repeat(2,600px);
-  grid-auto-rows: minmax(700px, auto);
-  margin: 0 auto;
+#home, #netherwood {
   background-color: $sub_color;
-  place-content: center;
-  gap: 100px;
   color: $main_color;
-  padding: 50px 0;
+}
+
+#damsteep {
+  color: $sub_color;
+  flex-direction: row-reverse;
+
+  a {
+    color: $sub_color;
+  }
+
+  button {
+    @include main-button;
+    
+    a {
+      color: #fff;
+      text-decoration: none;
+    }
+  }
+
+  button:hover {
+    @include main-button_hover;
+  }
+
+  button:hover > a {
+    @include link-only_hover;
+  }
+}
+
+.vineyard-info-container {
+  gap: 50px;
+  padding: 50px 100px;
+  display: flex;
+  justify-content: center;
+
+  .vineyard-info-text {
+    flex: 2;
+  }
+
+  .vineyard-info-img {
+    flex: 1;
+  }
+ 
 
   h2 {
     font-family: $font_heading;
@@ -499,11 +535,8 @@
 
   .vineyard-info-img {
     width: 100%;
-    height: 100%;
-    min-width: 200px;
-    max-width: 600px;
-    min-height: 400px;
-    max-height: 600px;
+    height: auto;
+  
 
     img {
       @include basic-image;
@@ -518,13 +551,14 @@
     .view-soil {
       text-align: right;
       text-transform: capitalize;
+      font-weight: bold;
     }
 
     a {
       @include link-only;
     }
 
-    a:hover {
+    button:hover > a {
       @include link-only_hover;
     }
 
@@ -534,6 +568,7 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
+    
 
     h2 {
       text-transform: capitalize;
@@ -542,12 +577,17 @@
 
     button {
       align-self: flex-end;
+
+      a {
+        text-decoration: none;
+      }
     }
 
     .vineyard-album-images {
       display: flex;
       justify-content: space-evenly;
       gap: 20px;
+      justify-content: center;
 
       .vineyard-wine-card {
         display: flex;
@@ -570,8 +610,102 @@
             height: 100%;
             object-fit: contain;
           }
+
+          img:hover {
+            opacity: 70%;
+          }
         }
       }
     }
   }
 }
+
+.soils {
+  h1 {
+    text-align: center;
+  }
+}
+
+.soils-container {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  padding: 10px 0 60px 0;
+  width: 80vw;
+  margin: 0 auto;
+  flex-wrap: wrap;
+
+  .soil-cards {
+    flex: 1;
+    text-align: justify;
+
+    * {
+      padding: 5px 0;
+    }
+  }
+
+  .soil-image-wrapper {
+    
+    img {
+      @include basic-image;
+    }
+  }
+}
+
+.soil-map {
+  margin: 30px 0;
+
+  h1, p {
+    text-align: center;
+  }
+
+  a {
+    color: $sub_color;
+    text-transform: capitalize;
+  }
+
+  p {
+    padding: 30px 0;
+  }
+
+  .soil-map-img-wrapper {
+text-align: center;
+filter: drop-shadow(0 3px 3px #222);
+    img {
+      @include basic-image;
+      width: 95vw;
+    }
+  }
+}
+
+.visit-album-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+
+  .visit-album-child {
+    flex: 1;
+    position: relative;
+  }
+
+  .visit-image-wrapper {
+    height: 100%;
+    img {
+      @include basic-image;
+    }
+  }
+
+  button {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+
+  a {
+    font-size: 26px;
+    padding: 10px;
+  }
+}
+
+
