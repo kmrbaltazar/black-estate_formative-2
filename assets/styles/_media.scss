@@ -111,7 +111,7 @@
   }
 
   #damsteep {
-      flex-direction: column-reverse;
+    flex-direction: column-reverse;
   }
 
   .vineyard-info-img img {
@@ -125,20 +125,24 @@
     width: 75vw;
 
     .soil-image-wrapper {
-        min-height: 150px;
-        min-width: 250px;
+      min-height: 150px;
+      min-width: 250px;
     }
   }
 
   .visit-album-container {
-      flex-direction: column;
+    flex-direction: column;
   }
 
   .visit-container {
     flex-direction: column-reverse;
-}
+  }
 
- 
+  #tastings {
+    .visit-container {
+      flex-direction: column-reverse !important;
+    }
+  }
 }
 
 // Mobile phone

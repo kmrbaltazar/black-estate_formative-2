@@ -717,6 +717,18 @@
   text-transform: capitalize;
   text-align: center;
   padding: 20px 0 50px 0;
+  
+  .visit-container {
+    flex-direction: row-reverse !important;
+  }
+
+  a {
+    color: $sub_color;
+  }
+
+  a:hover {
+    @include link-only_hover;
+  }
 }
 
 .visit-section {
@@ -725,15 +737,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 30px auto;
+    margin: 0 auto;
     width: 80vw;
-    gap: 30px;
+    padding-top: 10px;
 
     .visit-child {
       flex: 1;
     
       h2 {
-        padding-top: 15px;
+        margin-top: 5px;
         display: inline-block;
       }
 
@@ -749,11 +761,39 @@
         height: 100%;
 
         img {
-          width: 100%;
-          height: 100%;
-          object-fit: contain;
+          width: 70%;
+          height: 70%;
+          object-fit: contain; 
         }
       }
     }
   }
+}
+
+.events-title {
+  text-align: center;
+  @include tile-section;
+}
+
+.events-body {
+  background-color: $sub_color;
+}
+
+.events-section {
+  @include tile-section;
+  margin: 0 auto;
+  padding: 0 0 60px 0;
+
+  h2 {
+    text-align: left;
+    padding-bottom: 20px;
+  }
+
+  p {
+    font-size: 0.9em;
+  }
+}
+
+.trail {
+  margin-bottom: 10px;
 }
