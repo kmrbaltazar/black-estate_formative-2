@@ -35,82 +35,19 @@
     <title>Wine and Shop</title>
     <link rel="stylesheet" href="./assets/styles/main.css" />
     <script src="./assets/JS/scripts.js" defer></script>
+    <script src="./assets/JS/jquery-3.6.3.min.js"></script>
+    <script>
+        $(function(){
+            $('#header-loader').load('./header.html');
+            $('#footer-loader').load('./footer.html');
+        }
+        );
+    </script>
   </head>
   <!-- BODY -->
   <body>
-    <!-- HEADER -->
-    <header class="navigation">
-      <ul class="navigation__list tablet-group-1">
-        <li><a href="./shop.html">shop</a></li>
-        <li><a href="./vineyards.html">vineyards</a></li>
-        <li><a href="./visit.html">visit</a></li>
-        <li><a href="#">stay</a></li>
-      </ul>
-      <div class="navigation__logo">
-        <div class="navigation__logo-wrapper">
-          <a href="./index.html"
-            ><img
-              src="./assets/images/Black Estate Logo.svg"
-              alt="Image of Black Estate Logo"
-          /></a>
-        </div>
-        <div class="navigation__menu">
-          <div class="navigation__icon account-icon">
-            <a href="#"
-              ><img
-                src="./assets/icons/account.png"
-                alt="Account page icon"
-                class="icon"
-            /></a>
-          </div>
-          <div class="navigation__icon cart-icon">
-            <a href="#"
-              ><img
-                src="./assets/icons/cart.png"
-                alt="Shop cart icon"
-                class="icon"
-            /></a>
-          </div>
-          <div class="navigation__icon" id="nav-burger">
-            <a href="#"
-              ><img src="./assets/icons/burger.svg" alt="Burger menu icon"
-            /></a>
-          </div>
-          <div id="burger-menu" class="mobile-menu-content">
-            <div><a href="./shop.html">shop</a></div>
-            <div><a href="./vineyards.html">vineyards</a></div>
-            <div><a href="#">visit</a></div>
-            <div><a href="#">stay</a></div>
-            <div><a href="#">people</a></div>
-            <div><a href="#">contact</a></div>
-            <div><a href="#">membership</a></div>
-            <div><a href="#">account</a></div>
-            <div><a href="#">cart</a></div>
-          </div>
-        </div>
-      </div>
-      <ul class="navigation__list tablet-group-2">
-        <li class="people"><a href="#">people</a></li>
-        <li><a href="#">contact</a></li>
-        <li class="membership"><a href="#">membership</a></li>
-        <div class="navigation__icon">
-          <a href="#"
-            ><img
-              src="./assets/icons/account.png"
-              alt="Account page icon"
-              class="icon"
-          /></a>
-        </div>
-        <div class="navigation__icon">
-          <a href="#"
-            ><img
-              src="./assets/icons/cart.png"
-              alt="Shop cart icon"
-              class="icon"
-          /></a>
-        </div>
-      </ul>
-    </header>
+    <!-- GLOBAL HEADER -->
+    <div id="header-loader"></div>
     <!-- MAIN -->
     <section class="page-landing">
       <img
@@ -1033,102 +970,7 @@
         </div>
       </div>
     </section>
-
-    <footer class="footer">
-      <div class="footer-child footer-hours">
-        <h3>store hours</h3>
-        <div class="hours-column">
-          <ul class="days">
-            <li>monday</li>
-            <li>tuesday</li>
-            <li>wednesday</li>
-            <li>thursday</li>
-            <li>friday</li>
-            <li>saturday</li>
-            <li>sunday</li>
-          </ul>
-          <ul class="times">
-            <li>10am-4pm</li>
-            <li>closed</li>
-            <li>closed</li>
-            <li>10am-4pm</li>
-            <li>10am-4pm</li>
-            <li>10am-4pm</li>
-            <li>10am-4pm</li>
-          </ul>
-        </div>
-      </div>
-      <div class="footer-child footer-newsletter">
-        <h3>join our newsletter</h3>
-        <form class="newsletter-form">
-          <input
-            type="text"
-            id="name"
-            placeholder="first name"
-            class="newsletter-input newsletter-input-name"
-          />
-          <input
-            type="text"
-            id="name"
-            placeholder="last name"
-            class="newsletter-input newsletter-input-fam-name"
-          />
-          <input
-            type="email"
-            id="email"
-            placeholder="email address"
-            class="newsletter-input"
-          />
-        </form>
-        <button>join now</button>
-        <p>
-          Black Estate Limited |
-          <a href="#"> Licence 57/OFF/472/2020 - expiry 28 November 2023 </a>|
-          Biogro no. 5202 | <a href="#"> Media + Marketing Resources</a>
-        </p>
-      </div>
-      <div class="footer-child footer-contact-wrapper">
-        <h3>contact us</h3>
-        <div class="footer-contact">
-          <ul>
-            <li><a href="tel:006433146085">Phone: +64 3 314 6085</a></li>
-            <li>
-              <a href="mailto:bookings@blackestate.co.nz" class="email"
-                >Email: bookings@blackestate.co.nz</a
-              >
-            </li>
-            <li>Address: 614 Omihi Road (SH1),</li>
-            <li>Waipara Valley, New Zealand</li>
-          </ul>
-          <div class="footer-links">
-            <a href="#">shipping</a>
-            <a href="#">distributors</a>
-          </div>
-          <div class="footer-follow">
-            <a href="#">follow us</a>
-          </div>
-          <div class="footer-social-media">
-            <div class="footer-icons">
-              <a href="https://www.facebook.com/blackestatewines/"
-                ><img src="./assets/icons/fb.svg" alt="Facebook icon"
-              /></a>
-            </div>
-            <div class="footer-icons">
-              <a href="https://www.instagram.com/blackestate/"
-                ><img src="./assets/icons/ig.svg" alt="Instagram icon"
-              /></a>
-            </div>
-            <div class="footer-icons">
-              <a
-                href="https://www.tripadvisor.co.nz/Restaurant_Review-g658487-d3794935-Reviews-Black_Estate_Wine-Waipara_Canterbury_Region_South_Island.html"
-                ><img
-                  src="./assets/icons/tripadvisor.svg"
-                  alt="TripAdvisor icon"
-              /></a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
+<!-- GLOBAL FOOTER-->
+    <div id="footer-loader"></div>
   </body>
 </html>
