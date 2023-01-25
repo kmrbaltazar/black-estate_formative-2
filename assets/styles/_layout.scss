@@ -158,6 +158,16 @@
   }
 }
 
+.stay-section {
+  place-items: start;
+  padding-top: 40px;
+
+  h1 {
+    text-align: center;
+    margin: 0 0 30px 0;
+  }
+}
+
 .page-landing {
   height: 70vh;
 
@@ -798,4 +808,58 @@
 
 .trail {
   margin-bottom: 10px;
+}
+
+.nearby-accommodation {
+  background-color: $sub_color;
+  color: $main_color;
+  padding: 30px 0;
+
+  h1 {
+    text-align: center;
+  }
+}
+
+.stay-cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-auto-rows: minmax(400px, auto);
+  justify-items: center;
+  width: 90vw;
+  margin: 80px auto;
+  gap: 50px;
+
+  h2 {
+    text-align: center;
+  }
+
+  p {
+    text-align: justify;
+    margin-top: 15px;
+  }
+}
+
+.stay-card {
+  position: relative;
+  .stay-img-container {
+    width: 100%;
+    height: 300px;
+    margin-bottom: 20px;
+    
+
+    img {
+      @include basic-image;
+    }
+  }
+
+  a {
+    @include main-button;
+    position: absolute;
+    top: 240px;
+    left: 33%;
+  }
+
+  a:hover {
+    @include main-button_hover;
+  }
 }

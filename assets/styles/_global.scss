@@ -353,3 +353,12 @@ button:hover > a {
     }
   }
 }
+
+.footer-stay {
+  background-color: $main_color;
+  color: $sub_color;
+
+  a {
+    color: $sub_color;
+  }
+}
